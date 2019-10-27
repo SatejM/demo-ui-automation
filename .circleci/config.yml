@@ -5,3 +5,5 @@ jobs:
     docker:
        - image: cypress/base:8
      
+    steps:  # run inside primary (ruby) container, with access to secondary (DB) container as localhost:db-port
+       - checkout
