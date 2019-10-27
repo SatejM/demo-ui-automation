@@ -10,7 +10,7 @@ jobs:
 
        - run: npm install -g cypress --unsafe-perm=true --allow-root --save-dev
 
-       - run: cd integration/integration/e2etests
+       - run: cd integration/e2etests
        
        - run: cypress run
         
