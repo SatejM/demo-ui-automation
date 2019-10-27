@@ -4,7 +4,4 @@ jobs:
   build:
     docker:
        - image: cypress/base:8
-     steps:
-       - checkout
-       - run: echo "A first hello"
-  
+     
