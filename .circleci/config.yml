@@ -7,5 +7,7 @@ jobs:
      
     steps:  # run inside primary (ruby) container, with access to secondary (DB) container as localhost:db-port
        - checkout
-       
+
+       - run: npm install -g cypress --unsafe-perm=true --allow-root --save-dev
+
        - run: cd integration && cypress run
