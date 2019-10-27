@@ -1,7 +1,8 @@
 version: 2
- jobs:
-   build:
-     docker:
+
+jobs:
+  build:
+    docker:
        - image: cypress/base:8
      steps:
        - checkout
